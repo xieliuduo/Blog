@@ -140,8 +140,6 @@ console.log(obj.name) // Kevin
 
 其实原型对象就是通过 Object 构造函数生成的，结合之前所讲，实例的 `__proto__ `指向构造函数的 prototype ，所以我们再更新下关系图：
 ![实例与实例原型的关系图](images/prototype4.png)
-原型的原型关系图
-实例原型与构造函数的关系图
 
 原型链
 那 Object.prototype 的原型呢？
