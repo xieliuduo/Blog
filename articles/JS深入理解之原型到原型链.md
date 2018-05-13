@@ -13,7 +13,7 @@ console.log(person.name) // Kevin
 
 很简单吧，接下来进入正题：
 
-prototype
+## prototype
 每个函数都有一个 prototype 属性，就是我们经常在各种例子中看到的那个 prototype ，比如：
 
 ```js
@@ -36,7 +36,8 @@ console.log(person2.name) // Kevin
 
 让我们用一张图表示构造函数和实例原型之间的关系：
 
-构造函数和实例原型的关系图
+
+![构造函数和实例原型的关系图](images/prototype1.png)
 
 在这张图中我们用 Object.prototype 表示实例原型。
 
@@ -58,7 +59,8 @@ console.log(person.__proto__ === Person.prototype); // true
 ```
 于是我们更新下关系图：
 
-实例与实例原型的关系图
+
+![实例与实例原型的关系图](images/prototype2.png)
 
 既然实例对象和构造函数都可以指向原型，那么原型是否有属性指向构造函数或者实例呢？
 
@@ -76,7 +78,8 @@ console.log(Person === Person.prototype.constructor); // true
 ```
 所以再更新下关系图：
 
-实例原型与构造函数的关系图
+
+![实例与实例原型的关系图](images/prototype3.png)
 
 综上我们已经得出：
 
@@ -96,7 +99,8 @@ console.log(Object.getPrototypeOf(person) === Person.prototype) // true
 
 了解了构造函数、实例原型、和实例之间的关系，接下来我们讲讲实例和原型的关系：
 
-实例与原型
+
+## 实例与原型
 当读取实例的属性时，如果找不到，就会查找与对象关联的原型中的属性，如果还查不到，就去找原型的原型，一直找到最顶层为止。
 
 举个例子：
@@ -124,7 +128,8 @@ console.log(person.name) // Kevin
 
 但是万一还没有找到呢？原型的原型又是什么呢？
 
-原型的原型
+## 原型的原型
+
 在前面，我们已经讲了原型也是一个对象，既然是对象，我们就可以用最原始的方式创建它，那就是：
 
 ```js
@@ -134,8 +139,9 @@ console.log(obj.name) // Kevin
 ```
 
 其实原型对象就是通过 Object 构造函数生成的，结合之前所讲，实例的 `__proto__ `指向构造函数的 prototype ，所以我们再更新下关系图：
-
+![实例与实例原型的关系图](images/prototype4.png)
 原型的原型关系图
+实例原型与构造函数的关系图
 
 原型链
 那 Object.prototype 的原型呢？
@@ -154,8 +160,8 @@ null 表示“没有对象”，即该处不应该有值。
 所以查找属性的时候查到 Object.prototype 就可以停止查找了。
 
 最后一张关系图也可以更新为：
+![实例与实例原型的关系图](images/prototype5.png)
 
-原型链示意图
 
 顺便还要说一下，图中由相互关联的原型组成的链状结构就是原型链，也就是蓝色的这条线。
 
