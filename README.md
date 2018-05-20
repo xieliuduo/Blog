@@ -5,3 +5,4 @@
 2. [JS深入理解之词法作用域和动态作用域](articles/JS深入理解之词法作用域和动态作用域.md)
 3. [JS深入理解之闭包](articles/JS深入理解之闭包.md)
 4. [JS深入理解之函数传参](articles/JS深入理解之函数传参.md)
+5. [JS深入理解call和apply以及实现](articles/JS深入理解call和apply以及实现.md)
