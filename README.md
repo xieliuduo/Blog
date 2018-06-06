@@ -13,3 +13,6 @@
 3. [JS深入理解之闭包](https://github.com/xieliuduo/Blog/issues/3)
 4. [JS深入理解之函数传参](https://github.com/xieliuduo/Blog/issues/4)
 5. [JS深入理解call和apply以及实现](https://github.com/xieliuduo/Blog/issues/5)
+
+## 工作笔记总结
+* JS的 对象、数组 克隆复制
