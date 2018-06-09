@@ -15,4 +15,14 @@
 5. [JS深入理解call和apply以及实现](https://github.com/xieliuduo/Blog/issues/5)
 
 ## 工作笔记总结
-* JS的 对象、数组 克隆复制
+*  [JS的对象、数组 克隆复制](./articles/JS的对象、数组 克隆复制.md)
+*  [JS判断一个对象是不是数组Array](./articles/JS判断一个对象是不是数组Array.md)
+
+##原理探究
+
+
+* [JavaScript中Object.prototype.toString方法的原理](./articles/JavaScript中Object.prototype.toString方法的原理.md)
+
+
+### 杂记
+* [本地git提交代码后github绿点不刷新问题](./articles/jotting/1本地git提交代码后github绿点不刷新问题.md)
