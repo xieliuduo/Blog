@@ -1,5 +1,5 @@
 # Blog
-技术博客、JavaScript原生基础深入、node学习总结、vue、react实践总结
+技术博客、JavaScript原生基础深入、node学习总结、后端事件总结，vue、react实践总结
 
 <!--1. [JS深入理解之原型到原型链](articles/JS深入理解之原型到原型链.md)
 2. [JS深入理解之词法作用域和动态作用域](articles/JS深入理解之词法作用域和动态作用域.md)
@@ -18,6 +18,7 @@
 *  [JS的对象、数组 克隆复制](./articles/JS的对象、数组 克隆复制.md)
 *  [JS判断一个对象是不是数组Array](./articles/JS判断一个对象是不是数组Array.md)
 *  [nginx平台初探](./articles/nginx平台初探.md)
+*  
 
 
 ##原理探究
