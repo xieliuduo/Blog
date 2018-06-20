@@ -6,6 +6,7 @@
 3. [JS深入理解之闭包](./articles/JS深入理解之闭包.md)
 4. [JS深入理解之函数传参](./articles/JS深入理解之函数传参.md)
 5. [JS深入理解call和apply以及实现](./articles/JS深入理解call和apply以及实现.md)
+6. [JS深入理解Event Loop](./articles/JS深入理解Event Loop.md)
 
 
 ## 工作笔记总结
