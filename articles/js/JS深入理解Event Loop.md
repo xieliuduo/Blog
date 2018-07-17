@@ -177,7 +177,8 @@ process.nextTick方法可以在当前"执行栈"的尾部----下一次Event Loop
 	process.nextTick(function foo() {
 	  process.nextTick(foo);
 	});
+	
 
-事实上，现在要是你写出递归的process.nextTick，Node.js会抛出一个警告，要求你改成setImmediate。
+事实上，现在要是你写出递归的process.nextTick，Node.js会抛出一个警告，要求你改成setImmediate。.
 
 另外，由于process.nextTick指定的回调函数是在本次"事件循环"触发，而setImmediate指定的是在下次"事件循环"触发，所以很显然，前者总是比后者发生得早，而且执行效率也高（因为不用检查"任务队列"）。
